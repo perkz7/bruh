@@ -752,7 +752,7 @@ function Library:Create(xHubName,xGameName)
 
             DropdownButton.Name = "DropdownButton"
             DropdownButton.Parent = DropdownFrame
-            DropdownButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            DropdownButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
             DropdownButton.BackgroundTransparency = 1.000
             DropdownButton.BorderSizePixel = 0
             DropdownButton.Size = UDim2.new(0, 408, 0, 35)
@@ -784,12 +784,12 @@ function Library:Create(xHubName,xGameName)
 
             DropdownButton.MouseEnter:Connect(function()
                 game:GetService("TweenService"):Create(DropdownFrame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-                    BackgroundColor3 = Color3.fromRGB(48, 51, 70)
+                    BackgroundColor3 = Color3.fromRGB(0, 0, 0)
                 }):Play()
             end)
             DropdownButton.MouseLeave:Connect(function()
                 game:GetService("TweenService"):Create(DropdownFrame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-                    BackgroundColor3 = Color3.fromRGB(40, 42, 60)
+                    BackgroundColor3 = Color3.fromRGB(0, 0, 0)
                 }):Play()
             end)
 
@@ -831,7 +831,7 @@ function Library:Create(xHubName,xGameName)
                 
                 Option.Name = tostring(v).."_Option"
                 Option.Parent = DropList
-                Option.BackgroundColor3 = Color3.fromRGB(40, 42, 60)
+                Option.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
                 Option.Size = UDim2.new(0, 408, 0, 35)
                 Option.Font = Enum.Font.Gotham
                 Option.Text = v
